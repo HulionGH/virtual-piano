@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/piano.ico" rel="shortcut icon">
+
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300;400;800&display=swap"
+    rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <title>virtual-piano</title>
+  <!-- <script defer src="createsound.js"></script> -->
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">Virtual Piano</h1>
+  </header>
+  <main class="main">
+    <div class="btn-container">
+      <button class="btn btn-notes btn-active">Notes</button>
+      <button class="btn btn-letters">Letters</button>
+    </div>
+    <div class="piano">
+      <div class="pianoKey" data-letter="D" data-key="c"></div>
+      <div class="pianoKey" data-letter="F" data-key="d"></div>
+      <div class="pianoKey" data-letter="G" data-key="e"></div>
+      <div class="pianoKey" data-letter="H" data-key="f"></div>
+      <div class="pianoKey" data-letter="J" data-key="g"></div>
+      <div class="pianoKey" data-letter="K" data-key="a"></div>
+      <div class="pianoKey" data-letter="L" data-key="b"></div>
+      <div class="keys-sharp">
+        <div class="pianoKey sharp" data-letter="R" data-key="c♯"></div>
+        <div class="pianoKey sharp" data-letter="T" data-key="d♯"></div>
+        <div class="pianoKey sharp none"></div>
+        <div class="pianoKey sharp" data-letter="U" data-key="f♯"></div>
+        <div class="pianoKey sharp" data-letter="I" data-key="g♯"></div>
+        <div class="pianoKey sharp" data-letter="O" data-key="a♯"></div>
+      </div>
+    </div>
+    <button class="fullscreen openfullscreen"></button>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <a class="github" href="#" target="_blank" rel="noopener noreferrer">github</a>
+      <a class="userName" href="https://discord.com/channels/" target="" rel="">Discord UserName: @Julia#6440 </a>
+      <a class="rss" href="https://rs.school/js/" target="_blank" rel="noopener noreferrer">
+        <span class="rss-year">'21</span>
+      </a>
+    </div>
+  </footer>
+  <audio data-key="c" src="assets/audio/c.mp3"></audio>
+  <audio data-key="d" src="assets/audio/d.mp3"></audio>
+  <audio data-key="e" src="assets/audio/e.mp3"></audio>
+  <audio data-key="f" src="assets/audio/f.mp3"></audio>
+  <audio data-key="g" src="assets/audio/g.mp3"></audio>
+  <audio data-key="a" src="assets/audio/a.mp3"></audio>
+  <audio data-key="b" src="assets/audio/b.mp3"></audio>
+  <audio data-key="c♯" src="assets/audio/c♯.mp3"></audio>
+  <audio data-key="d♯" src="assets/audio/d♯.mp3"></audio>
+  <audio data-key="f♯" src="assets/audio/f♯.mp3"></audio>
+  <audio data-key="g♯" src="assets/audio/g♯.mp3"></audio>
+  <audio data-key="a♯" src="assets/audio/a♯.mp3"></audio>
+  <button>Play audio</button>
+
+
+  <script src="script.js"></script>
+ 
+
+</body>
+
+</html>
